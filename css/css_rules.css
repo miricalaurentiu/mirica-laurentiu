@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+body {
+    margin: auto;
+    justify-self: center;
+}
+
+@media only screen and (min-width: 1280px) {
+    body, footer {
+        width: 1280px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+    body, footer {
+        width: 768px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body, footer {
+        width: 320px;
+    }
+}
+
+#logo {
+    float: left;
+    height: 61px;
+    width: 160px;
+    display: block;
+    background: linear-gradient(rgba(1, 10, 61, 0.89), rgba(187, 38, 38, 0.1));
+}
+
+#mainMenu {
+    display: flex;
+    top: 6px;
+    float: right;
+}
+
+#mainMenu>div {
+    padding: 6px;
+    margin-top: 1rem;
+}
+
+#mainMenu>div:hover {
+    color: white;
+    text-decoration: underline;
+    background: #262A33;
+    border-bottom: 2px solid #83BA23;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-image: url('../FSD/6.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#footMenu {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    place-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+#notFound {
+    margin: auto;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+#notFound>img {
+    justify-self: center;
+    margin: auto;
+    padding: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.center {
+    justify-content: center;
+    text-align: center;
+}
+
+.flexRow {
+    flex-flow: row;
+}
+
+.flexColumn {
+    flex-flow: column;
+}
